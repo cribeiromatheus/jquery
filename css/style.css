@@ -61,6 +61,18 @@ a {
 	display: inline-block;
 }
 
+#logo-inc {
+	margin-top: -2rem;
+}
+
+#navegar {
+	margin-top: 8rem;
+}
+
+#logo-pri {
+	margin-top: -5rem;
+}
+
 /* Header Style */
 .navbar .navbar-brand {
 	text-align: center;
