@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $('.featured-item a').addClass('btn btn-dark stretch-link');
 
-    $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
+    $('.featured-item:first h4').append('<span class="badge bg-secondary"> Novo</span>')
     // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').addClass('active')
@@ -41,25 +41,25 @@ $(document).ready(function(){
      /*
       * Manipulação de eventos
       */
-     $('.featured-item a').on('blur', function(event){
-
-        event.preventDefault();
-
-        alert('Produto esgotado');
-
-     });
-     
-     $('a:nth(1)').hide(20000, function(){
-      alert( $(this).find('a').text() + "Esgotado")
-   })
-      .show(3000, function(){
-         alert( $(this).find('a'.text() + "Em estoque"))
-      });
 })
 
 $('#teste').on('click', function(e){
    e.preventDefault();
    $(this).animate(20000, function(){
-      
+      $('#teste').animate({
+         opacity: "hidden"
+      })
    })
 })
+
+$('.nav-modal-open').on('click', function(e){
+   e.preventDefault();
+   let elem = $(this).attr('rel')   
+   $('.modal-body').html($('#'+elem).html())
+   $('#modalTitleId').html($(this).text())   
+/*
+* Aparecer modal clicando 
+*/
+   let myModal = new bootstrap.Modal($('#modalId'))
+   myModal.show();
+});

@@ -26,13 +26,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Produtos</a>
+                        <a class="nav-link"  href="products.html">Carros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" rel="sobre" href="about.html">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link nav-modal-open" rel="contato" href="contact.html">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@
                             <img src="assets/images/item-01.jpg" alt="Item 1">
                             <h4>Carro 1</h4>
                             <h6>R$ 200.000,00</h6>
-                            <a id="teste" href="single-product.html">
+                            <a href="single-product.html">
                                 Comprar
                             </a>
                         </div>
@@ -162,6 +162,44 @@
                 </div>
             </div>
         </div>
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            * Formulário
+        -->
+        <div id="contato" class="visually-hidden">
+            <form action="" class="form">
+                <div class="mb-3">
+                  <label for="form-name" class="form-label">Nome: </label>
+                  <input type="text" name="form-name" id="form-name" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome" required>                  
+                </div>
+                <div class="mb-3 required
+                    <label for="form-email" class="form-label">Email: </label>
+                    <input type="email" name="form-email" id="form-email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail" required>                    
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+        <div id="sobre" class="visually-hidden">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias esse tenetur quaerat, quibusdam quae necessitatibus suscipit nostrum harum error quia enim sunt pariatur qui perspiciatis nihil in? Maiores, adipisci.</p>
+        </div>
+        
+        
+  
         
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
