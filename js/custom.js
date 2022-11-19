@@ -47,16 +47,19 @@ $(document).ready(function(){
 
         alert('Produto esgotado');
 
-     })
+     });
      
-     
-     
-     
+     $('a:nth(1)').hide(20000, function(){
+      alert( $(this).find('a').text() + "Esgotado")
+   })
+      .show(3000, function(){
+         alert( $(this).find('a'.text() + "Em estoque"))
+      });
+})
 
-
-
-
-
-
-
+$('#teste').on('click', function(e){
+   e.preventDefault();
+   $(this).animate(20000, function(){
+      
+   })
 })
