@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>jQuery</title>
 </head>
@@ -258,7 +259,41 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
+                    <div id="contato" class="visually-hidden">
+                        <form action="" class="form">
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label">Nome: </label>
+                                <input type="text" name="form-name" id="form-name" class="form-control" placeholder="Digite seu nome"
+                                    aria-describedby="helpNome" required>
+                            </div>
+                            <div class="mb-3 required">
+                                    <label for="form-email" class="form-label">Email: </label>
+                                <input type="email" name="form-email" id="form-email" class="form-control"
+                                    placeholder="Digite seu email" aria-describedby="helpEmail" required>
+                            </div>
+                            <div class="mb-3 required">
+                                <label for="cpf-form" class="form-label">CPF: </label>
+                                <input type="text" name="cpf-form" id="cpf-form" class="form-control" placeholder="xxx.xxx.xxx-xx" aria-describedby="helpCPF" required>
+                            </div>
+                            <div class="mb-3 required">
+                                <label for="date-form" class="form-label">Data do requerimento: </label>
+                                <input type="text" name="date-form" id="datetest" class="form-control" placeholder="00/00/0000" aria-describedby="helpdate" required>
+                            </div>
+                            <div class="mb-3 required">
+                                <label for="cep-form" class="form-label">CEP: </label>
+                                <input type="text" name="cep-form" id="cep-form" class="form-control" placeholder="00000-000" aria-describedby="helpcep" required>
+                            </div>
+                            <div class="mb-3 required">
+                                <label for=" pay-form" class="form-label">Pagamento: </label>
+                                <input type="text" name="pay-form" id="pay-form" class="form-control" aria-describedby="helpcep" required>
+                            </div>
+                            <div class="mb-3 required">
+                                <label for=" pay-form2" class="form-label">Pagamento2: </label>
+                                <input type="text" name="pay-form2" id="pay-form2" class="form-control" aria-describedby="helpcep" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,21 +301,8 @@
     <!--
             * Formulário
         -->
-    <div id="contato" class="visually-hidden">
-        <form action="" class="form">
-            <div class="mb-3">
-                <label for="form-name" class="form-label">Nome: </label>
-                <input type="text" name="form-name" id="form-name" class="form-control" placeholder="Digite seu nome"
-                    aria-describedby="helpNome" required>
-            </div>
-            <div class="mb-3 required
-                    <label for=" form-email" class="form-label">Email: </label>
-                <input type="email" name="form-email" id="form-email" class="form-control"
-                    placeholder="Digite seu email" aria-describedby="helpEmail" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
+    
+ 
 
     <div id="sobre" class="visually-hidden">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores alias esse tenetur quaerat, quibusdam quae
@@ -294,6 +316,8 @@
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery/dist/jquery.mask.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="./js/custom.js"></script>
 </body>
 

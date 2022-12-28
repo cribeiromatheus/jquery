@@ -61,6 +61,40 @@ $('#noticias').ready(function(){
    let validasbm1 = false;
    let validasbm2 = false;
    let validasbm3 = false;
+   $('#form-cpf').mask('000.000.000-00', {reverse: true});
+
+   /*
+   ***JQUERY PLUGIN MASK
+   */
+   $('body').on('focus', '.modal-body .form', function(e){
+      $('#cpf-form').mask('000.000.000-00', {reverse: true});
+   });
+
+   $('body').on('focus', '.modal-body .form', function(e){
+      $('#cep-form').mask('00000-000');
+   });
+
+   $('body').on('focus', '.modal-body .form', function(e){
+      $('#date-form').mask("00/00/0000");
+   });
+
+   $('body').on('focus', '.modal-body .form', function(e){
+      $('#pay-form').mask('000.000.000.000.000,00', {reverse: true});
+   });
+
+   $('body').on('focus', '.modal-body .form', function(e){
+      $('#pay-form2').mask("#.##0,00", {reverse: true});
+   });  
+   /************************************************************/
+   /*
+   ***JQUERY UI
+   */
+   $('body').on('focus', '#datetest', function(){
+      $(this).datepicker()
+   })
+   /************************************************************/
+
+
 
    $("#nome-form").blur(function(){
     if($("#nome-form").val().length <= 2) {         
