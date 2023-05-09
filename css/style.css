@@ -859,7 +859,7 @@ a {
   /*BANNER*/
   .carousel-item img {
 	margin-top: 12rem;
-	max-width: 100%;
+	max-width: 98%;
 	height: 35rem;
   }
   
@@ -868,6 +868,8 @@ a {
   }
   .carousel-control-prev, .carousel-control-next {
     display: none;
-}  
+} 
   /*********/
-  
+#containerglobal {
+	width: 98%;
+}
