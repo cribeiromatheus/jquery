@@ -795,7 +795,7 @@ a {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: #333;
+	background-color: #ffffff;
   }
   
   .dropdown-menu li {
@@ -805,8 +805,20 @@ a {
   .dropdown-menu a {
 	display: block;
 	padding: 0.5rem 1rem;
-	color: #fff;
+	color: #000000;
 	text-decoration: none;
+  }
+
+  .dropdown-menu a:hover {
+	background-color: #6410ff3d;
+  }
+
+  .dropdown-menu li:hover {
+	background-color: #6410ff3d;
+  }
+
+  .dropdown-menu li a:hover {
+	color: #ff8b48;
   }
   
   .nav-item:hover .dropdown-menu {
