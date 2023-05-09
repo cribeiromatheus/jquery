@@ -2,61 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
-    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>jQuery</title>
+<?php
+ include_once "./cabecalho.php";
+?>
+    <title>Sublima Arts</title>
 </head>
 
 <body>
+<?php
+    include_once "./nav.php";
+?>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a id="logo-pri" class="navbar-brand" href="#"><img width="300px" src="assets/images/header-logo.png"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul id="navegar" class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Carros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-modal-open" rel="sobre" href="about.html">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-modal-open" rel="contato" href="contact.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="caption">
-                        <h2>Ecommerce HTML Template</h2>
-                        <div class="line-dec"></div>
-                        <p>HTML Template can be converted into your desired CMS theme. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div id="connta" class="container mx-auto">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/images/banner-bg.jpg" class="d-block w-100" alt="Imagem 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/caar (1).jpg" class="d-block w-100" alt="Imagem 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/caar (4).jpg" class="d-block w-100" alt="Imagem 3">
+      </div>
     </div>
+    <button class="carousel-control-prev align-middle" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next align-middle" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+    <div class="carousel-indicators d-flex justify-content-center mt-3">
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+
+
 
     <div id="featured" class="featured-items">
         <div class="container">
@@ -197,8 +183,8 @@
                     <div class="col-md-3">
                         <input type="text" name="form-cpf" class="form-control" id="form-cpf" placeholder="CPF xxx.xxx.xxx-xx">
                     </div>
-                    <div class="col-md-4">
-                        <button id="submbutton" class="btn btn-light" type="submit">Quero receber</button>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <button id="submbutton" class="btn btn-sm btn-light" type="submit">Quero receber</button>
                     </div>
                 </form>
             </div>
@@ -209,7 +195,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="logo">
-                        <img id="logo-inc" width="300px" src="assets/images/header-logo.png" alt="">
+                        <img id="logo-inc" width="200px" src="assets/images/header-logo.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -319,6 +305,7 @@
     <script src="./vendor/jquery/dist/jquery.mask.min.js"></script>
     <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="./js/custom.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
