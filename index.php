@@ -14,28 +14,30 @@
         include_once "./nav.php";
         ?>
 
-        <div id="connta" class="container mx-auto">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/images/banner-bg.jpg" class="d-block w-100 img-fluid" alt="Imagem 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/caar (1).jpg" class="d-block w-100 img-fluid" alt="Imagem 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/caar (4).jpg" class="d-block w-100 img-fluid" alt="Imagem 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev align-middle" type="button">
-                </button>
-                <div class="carousel-indicators d-flex justify-content-center mt-3">
-                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-            </div>
-        </div>
+<div id="connta" class="container mx-auto">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./assets/images/d_maes_1.jpg" class="d-block w-100 img-fluid" alt="Imagem 1">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="./assets/images/d_maes_2.jpg" class="d-block w-100 img-fluid" alt="Imagem 2">
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="./assets/images/d_maes_3.jpg" class="d-block w-100 img-fluid" alt="Imagem 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev align-middle" type="button">
+    </button>
+    <div class="carousel-indicators d-flex justify-content-center mt-3">
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -51,11 +53,14 @@
                     <div class="col-md-12">
                         <div class="owl-carousel owl-theme">
                             <div class="featured-item">
-                                <img src="assets/images/item-01.jpg" alt="Item 1">
-                                <h4>Carro 1</h4>
-                                <h6>R$ 200.000,00</h6>
+                                <img src="assets/images/d_maes_2.jpg" alt="Item 1">
+                                <h4>Dia das mães floral</h4>
+                                <h6>R$ 40,00</h6><br>
                                 <a href="single-product.html">
-                                    Comprar
+                                    Detalhes
+                                </a>
+                                <a href="single-product.html">
+                                    +Carrinho
                                 </a>
                             </div>
                             <div class="featured-item">
@@ -63,7 +68,7 @@
                                 <h4>Carro 2</h4>
                                 <h6>R$ 8.000,00</h6>
                                 <a href="single-product.html">
-                                    Comprar
+                                    Detalhes
                                 </a>
                             </div>
                             <div class="featured-item">
